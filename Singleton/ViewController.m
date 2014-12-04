@@ -7,6 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "MainSingleton.h"
+
+#define INITIAL_MESSAGE @"Inicio - Main"
 
 @interface ViewController ()
 
@@ -14,14 +17,24 @@
 
 @implementation ViewController
 
+@synthesize lblMsg;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [MainSingleton instance].globalString=INITIAL_MESSAGE;
+
+    NSLog(@"didLoad = %@",[MainSingleton instance].globalString);
+    self.lblMsg.text=[MainSingleton instance].globalString;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    NSLog(@"******** will appear");
+    [MainSingleton instance].globalString=[MainSingleton instance].globalString;
+    NSLog(@"willAppear = %@",[MainSingleton instance].globalString);
+    self.lblMsg.text=[MainSingleton instance].globalString;
 }
+
+
 
 @end

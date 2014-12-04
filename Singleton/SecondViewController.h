@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SecondViewController.h
 //  Singleton
 //
 //  Created by Marcelo Sampaio on 12/4/14.
@@ -8,10 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+@interface SecondViewController : UIViewController
 
-@interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITextField *textMsg;
 
-@property (weak, nonatomic) IBOutlet UILabel *lblMsg;
 
 @end
-
