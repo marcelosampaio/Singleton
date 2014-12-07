@@ -26,6 +26,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Main" id="xfW-FK-KbU">
+                        <barButtonItem key="leftBarButtonItem" title="Third" id="bbv-oW-tDn">
+                            <connections>
+                                <segue destination="P7c-XO-dgr" kind="push" id="DPx-gV-4vu"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Proceed" id="Gaa-Je-pHx">
                             <connections>
                                 <segue destination="5Xx-ti-LDK" kind="push" id="BbM-Mo-XMV"/>
@@ -39,6 +44,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="734" y="291"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="ycc-Pd-LSi">
+            <objects>
+                <viewController id="P7c-XO-dgr" customClass="ThirdViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kLV-1K-Was"/>
+                        <viewControllerLayoutGuide type="bottom" id="GrY-VG-Pn5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QVY-tj-CDs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W3j-oI-Dwe">
+                                <rect key="frame" x="33" y="213" width="255" height="142"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jSH-fr-MQE"/>
+                    <connections>
+                        <outlet property="message" destination="W3j-oI-Dwe" id="Fof-0d-ENV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LuZ-yi-wmB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1266" y="-354"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="sIm-Ny-G7q">
@@ -76,7 +111,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pXc-BU-vZs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1252" y="291"/>
+            <point key="canvasLocation" x="1266" y="291"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="amG-CD-3fi">

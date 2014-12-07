@@ -16,6 +16,7 @@
 		9C5F1C581A30063600579731 /* SingletonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5F1C571A30063600579731 /* SingletonTests.m */; };
 		9C5F1C631A30068400579731 /* MainSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5F1C621A30068400579731 /* MainSingleton.m */; };
 		9C5F1C6B1A30864B00579731 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5F1C6A1A30864B00579731 /* SecondViewController.m */; };
+		9CC505011A34F3870059EA89 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC505001A34F3870059EA89 /* ThirdViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		9C5F1C621A30068400579731 /* MainSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainSingleton.m; sourceTree = "<group>"; };
 		9C5F1C691A30864B00579731 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		9C5F1C6A1A30864B00579731 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		9CC504FF1A34F3870059EA89 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		9CC505001A34F3870059EA89 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +142,8 @@
 				9C5F1C431A30063600579731 /* ViewController.m */,
 				9C5F1C691A30864B00579731 /* SecondViewController.h */,
 				9C5F1C6A1A30864B00579731 /* SecondViewController.m */,
+				9CC504FF1A34F3870059EA89 /* ThirdViewController.h */,
+				9CC505001A34F3870059EA89 /* ThirdViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -271,6 +276,7 @@
 			files = (
 				9C5F1C6B1A30864B00579731 /* SecondViewController.m in Sources */,
 				9C5F1C441A30063600579731 /* ViewController.m in Sources */,
+				9CC505011A34F3870059EA89 /* ThirdViewController.m in Sources */,
 				9C5F1C411A30063600579731 /* AppDelegate.m in Sources */,
 				9C5F1C631A30068400579731 /* MainSingleton.m in Sources */,
 				9C5F1C3E1A30063600579731 /* main.m in Sources */,
@@ -464,6 +470,7 @@
 				9C5F1C5D1A30063600579731 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9C5F1C5E1A30063600579731 /* Build configuration list for PBXNativeTarget "SingletonTests" */ = {
 			isa = XCConfigurationList;
@@ -472,6 +479,7 @@
 				9C5F1C601A30063600579731 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
